@@ -1,16 +1,17 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
+
+import Posts from "./modules/Posts";
+import Todos from "./modules/Todos";
 
 export default new Vuex.Store({
-  state: {
-
+  modules: {
+    Posts,
+    Todos
   },
-  mutations: {
-
-  },
-  actions: {
-
-  }
-})
+  state: {},
+  mutations: {},
+  actions: {}
+});
