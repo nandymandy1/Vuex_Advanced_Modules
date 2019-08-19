@@ -37,7 +37,11 @@ const actions = {
 
 const mutations = {
   TODO_DELETING(state) {
-    state.i = state.i + 1;
+    if (state.i !== 15) {
+      state.i = state.i + 1;
+    } else {
+      state.i = 1;
+    }
   }
 };
 
