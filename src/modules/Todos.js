@@ -116,6 +116,10 @@ const mutations = {
   todo_edited(state, data) {
     state.loading = false;
     state.todos = state.todos.map(todo => (todo.id == data.id ? data : todo));
+  },
+
+  say_hello(state, data) {
+    console.log("hello from about component", data);
   }
 };
 

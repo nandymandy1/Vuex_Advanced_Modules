@@ -92,7 +92,6 @@ export default {
       loadPosts: "Posts/getPosts",
       deletePost: "Posts/deletePost"
     }),
-    
     addNewTodo() {
       if (this.addTodo(this.title)) {
         this.title = "";
